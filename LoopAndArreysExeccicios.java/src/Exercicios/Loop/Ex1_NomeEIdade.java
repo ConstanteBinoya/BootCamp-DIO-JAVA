@@ -1,3 +1,4 @@
+package Exercicios.Loop;
 import java.util.Scanner;
 
 /*

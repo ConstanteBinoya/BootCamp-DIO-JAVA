@@ -1,7 +1,6 @@
 package Exercicios.Loop;
 import java.util.Scanner;
-
-import javax.lang.model.util.ElementScanner6;
+import javax.lang.model.util.ElementScanner6; //Não sei o que é, porém, se tirar o programa dá erro.
 
 /*
  Faça um programa que leia 5 números e informe o MAIOR número e a MÉDIA dentre eles.
@@ -11,11 +10,7 @@ public class Ex3_MaiorEMedia {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int numero;
-        int maior = 0;
-        int soma = 0;
-        int count = 0;
-        int media;
+        int numero, media, maior = 0, soma = 0, count = 0;
 
         System.out.println("===================================");  
         System.out.println("          BOLETIM ESCOLAR          "); 
@@ -36,7 +31,7 @@ public class Ex3_MaiorEMedia {
             
             if (numero > maior) maior = numero;
 
-            count = ++count;
+            count++;
         } while(count < 5);
 
         media = soma / 5;
